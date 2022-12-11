@@ -1,0 +1,326 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); 
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+ body{
+ font-family: 'Roboto', sans-serif;
+ }
+
+ a{
+  text-decoration: none;
+  padding: 0.7rem ;
+  margin:0 0.25rem;
+  color: white;
+ }
+ p{
+  padding: 1rem;
+  margin: 1rem;
+ }
+ #logo{
+  display:flex;
+  align-items: center;
+ }
+ #logo img{
+  height:63px ;
+  width: 77px;
+ }
+ /* Utilitary classes */
+ .container{
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+ }
+  .text-primary{
+    color:  #0fac01;
+    margin-right: 0.5rem;
+  }
+ 
+  .py-1{ padding: 1.5rem 0;}
+  .py-2{ padding: 2rem 0;}
+  .py-3{ padding: 3rem 0;}
+  .btn{
+    background-color: #0fac01;
+    border: none;
+    color: #333;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin:1rem;
+  }
+  .btn a{
+    color: #333;
+  }
+  .btn a:hover{
+    color: #333;
+  }
+  .btn:hover{
+    background-color: #0a7c00;
+    border: none;
+    color: #333;
+  }
+  .l-heading{
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+    position: relative;
+    animation:slide forwards ease-in-out 2s;
+  }
+  .text-center{
+    text-align: center;
+  }
+  .m-heading{
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+    margin-top: 1.5rem;
+  }
+  @keyframes slide {
+    0%{
+      left:-400px;
+    }
+    100%{
+      left:0px;
+    }
+  }
+  .lead{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+  .bg-light{
+    background-color: #d6dbd7;
+    color: #333;
+  }
+  .bg-dark{
+    background-color: #333;
+    color: #fff;
+  }
+  /* Navbar */
+#navbar{
+  display:flex;
+  background: #333;
+  color: white;
+  position: sticky;
+  top:0;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+  height:49px;
+
+}
+#navbar ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current
+{
+  background-color: #0fac01;
+  border-radius: 5px;
+}
+
+/* showcase */
+
+#showcase{
+  background: url(bg.jpg)no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  
+}
+
+#showcase .showcase-content{
+  background-color: rgba(33, 46, 20, 0.4);
+  height: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.2rem;
+  margin-bottom: 5rem;
+}
+
+/* Services */
+#about .items{
+  display: flex;
+  padding: 1rem;
+  
+}
+#about .item{
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+#about .item i{
+  background-color: #0fac01;
+  border-radius: 50%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* table */
+
+#tbl {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #333;
+}
+
+#tbl td, #tbl th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tbl tr:nth-child(even){background-color:#0a7c00;}
+
+#tbl tr:hover {background-color: #67a861;}
+
+#tbl th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0fac01;
+  color:#333;
+  
+}
+#tbl td .delete{
+background-color: #fc6464;
+}
+#tbl td .delete:hover{
+background-color: #850202;
+}
+
+
+/* BMI and Registration */
+
+
+.bmi{
+  width:50vw;
+ margin:auto;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+  
+}
+.bmi>form{
+  width:100%;
+
+
+}
+.bmi>form>div{
+  font-size: 1.3rem;
+}
+.form_button{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.form_input{
+  width:100%;
+  border:1px #ddd solid;
+  font-size: 1.1rem;
+  margin: 1.5rem 0;
+  padding: 8px;
+  
+}
+.form_input:focus{
+  outline: none;
+  border: 2px solid  #0fac01;
+}
+
+/* #registeration h2{
+  padding-top: 1.5rem;
+ 
+}
+#fitness h2{
+  padding-top: 1.5rem;
+} */
+
+/* Trainer */
+
+#trainer{
+  
+  text-align: center;
+}
+
+#trainer .trainer-info img{
+  height: 186px;
+  width: 181px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.trainer-info h3{
+  font-size: 1.5rem;
+}
+
+/* TESTIMONIALS */
+#testimonials{
+  height:600px;
+}
+#testimonials .testimonial{
+  padding: 20px;
+  margin-bottom: 1.7rem;
+  border-radius: 5px;
+ 
+}
+#testimonials h2{
+  color: #333;
+  margin-bottom: 1.7rem;
+}
+#testimonials .testimonial img{
+  width:100px;
+  float:left;
+  margin-right:20px;
+  border-radius: 50%;
+}
+
+/* Contact form */
+#contact-form .form-group{
+  margin-bottom:20px ;
+}
+#contact-form label{
+  display: block;
+  margin-bottom: 5px;
+}
+#contact-form input,
+#contact-form textarea{
+  width:100%;
+  padding: 10px;
+  border:1px #ddd solid ;
+}
+#contact-form textarea{
+  height:200px;
+}
+#contact-form input:focus,
+#contact-form textarea:focus{
+  outline: none;
+  border: 2px solid  #0fac01;
+}
+#contact-info .contact{
+  display: flex;
+  padding: 1rem;
+  
+}
+.contact .box{
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+.contact .box i{
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact .box i:hover{
+  background-color: #0fac01;
+  border-radius: 30%;
+}

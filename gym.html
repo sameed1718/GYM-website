@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym</title>
+  <link rel="stylesheet" href="master.css">
+</head>
+<body>
+  <nav id="navbar">
+    <h1 id="logo">
+      <img src="logo.png" alt="">
+      <span class="text-primary">HUSTLE</span> UP
+    </h1>
+    <ul>
+      <li><a href="#showcase">HOME</a></li>
+      <li><a href="#registeration">REGISTER NOW</a></li>
+      <li><a href="#fitness">BMI</a></li>
+      <li><a href="#trainer">ABOUT</a></li>
+      <li><a href="#contactus">CONTACT US</a></li>
+    </ul>
+  </nav>
+  <!-- SHOWCASE -->
+  <div id="showcase">
+    <div class="showcase-content">
+      <h1 class="l-heading">There is no <span class="text-primary">GAIN </span></h1>
+      <h1 class="l-heading">without <span class="text-primary">PAIN !!</span></h1>
+      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur deleniti cupiditae quisquam expedita, ipsam plernatur necessitatibus!</p>
+      <button class="btn"><a href="#about">Read More</a></button>
+    </div>
+  </div>
+  <section id="about" class="py-1 bg-light">
+    <div class="container">
+      <h1 class="m-heading text-center"><span class="text-primary">Services</span>we provide</h1>
+   
+    <div class="items">
+      <div class="item">
+        <i class="fa-solid fa-heart-pulse fa-3x"></i>
+        <div>
+          <h3>Cardio</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, distinctio!
+          </p>
+       </div>
+      </div>
+      <div class="item">
+        <!-- <img src="weight-loss.png"></img> -->
+        <i class="fa-solid fa-weight-scale fa-3x"></i>
+        <div>
+          <h3>Weight Loss</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, distinctio!
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <i class="fa-solid fa-dumbbell fa-3x"></i>
+        <div>
+          <h3>Body Building</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, distinctio!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+<section class="bg-dark" id="registeration" >
+    <div class="bmi py-2" >
+      <h2 class="m-heading text-center"><span class="text-primary">REGISTER</span>NOW</h2>
+        <form method="POST" name="myform">
+      <br>
+      <div>Serial no:</div>
+     <input class="form_input" type="number" name="srno"><br>
+        <div>Name:</div>  <input class="form_input" type="text" name="name"><br>
+       <div>Date:</div>   <input class="form_input" type="date" name="date"><br>
+   <div> Membership:</div><br><input type="radio" name="Membership" id="membership" value="Standard">Standard<br>
+               <input type="radio" name="Membership" id="membership" value="Super">Super<br>
+          <br><br>
+          <div class="form_button">
+      <input type="button" class="btn" name="add" value="Add Data" onclick="addMember();" class="add">
+    </div>
+      </form>
+      </div>
+      <div>
+      <table id="tbl" class="table" border="1">
+        <thead>
+          <th>Serial no</th> 
+          <th>Name</th>
+          <th>Date</th>
+          <th>Membership</th>
+          <th>Delete</th>
+        </thead>       
+          <tbody>       
+            </tbody>
+              </table>
+            </div>
+            </section>
+              <section id="fitness" class="bg-light py-2">
+                <div class="bmi">
+                  <h2 class="m-heading text-center"><span class="text-primary">BMI </span>CALCULATOR</h2>
+                  <form name="bmiForm">
+                   <div>Your Weight(kg):</div> 
+                    <input type="text" name="weight" size="10" class="form_input"><br />
+                    <div>Your Height(cm): </div> 
+                    <input class="form_input" type="text" name="height" size="10"><br />
+                    <div>Your BMI:</div>  
+                    <input class="form_input" type="text" name="bmi" size="10"><br />
+                    <div>This Means:</div>  
+                    <input class="form_input" type="text" name="result" size="25"><br />
+                    <div class="form_button">
+                      <input type="button" class="btn" value="Calculate BMI" onClick="calculateBmi()"><br />
+                      <input type="reset" class="btn" value="Reset" />
+                    </div>
+                    </form>
+                </div>
+              </section>
+
+  <section id="trainer">
+    <div class="trainer-info py-2 bg-dark ">
+      <h2 class="m-heading text-center"><span class="text-primary">Our</span>Trainer</h2>
+      <div class="trainer-img">
+        <img src="trainer.jpg" alt="">
+      </div>
+      <h3 class="text-primary text-center">Chris Hemsworth</h3>
+      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ea dolore blanditiis molestiae nemo, doloribus modi corrupti temporibus nisi iste error minima maiores! Ipsa reprehenderit non dolores. Neque, commodi distinctio.</p>
+    </div>
+  </section>
+  <!-- TEATIMONIALS -->
+  <section id="testimonials" class="py-2 bg-light">
+    <div class="container">
+      <h2 class="m-heading text-center">What Our <span class="text-primary">Members</span>  Say!</h2>
+      <div class="testimonial bg-dark">
+          <img src="member1.jpg" alt="vk">
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. A fuga officia ad impedit repudiandae id molestias earum. Eligendi amet omnis possimus laboriosam consequuntur illo quas temporibus incidunt autem tempora labore officiis modi distinctio odio, reiciendis quos itaque? Animi, corrupti ex.</p>
+        </div>
+      <div class="testimonial bg-dark">
+          <img src="member2.jpg" alt="ab">
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. A fuga officia ad impedit repudiandae id molestias earum. Eligendi amet omnis possimus laboriosam consequuntur illo quas temporibus incidunt autem tempora labore officiis modi distinctio odio, reiciendis quos itaque? Animi, corrupti ex.</p>
+        </div>
+    </div>
+  </section>
+
+  <div id="contactus"></div>
+  <section id="contact-form" class="py-3 bg-dark">
+    <div class="container">
+      <h2 class="m-heading text-center"><span class="text-primary">CONTACT</span> US</h2>
+      <p>Please fill the form below to contact us!</p>
+      <form action="process.php">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+   </section>
+   <section id="contact-info" class="bg-light">
+    <div class="contact" >
+      <div class="box">
+        <i class="fas fa-hotel fa-3x"></i>
+        <div>
+        <h3>Location</h3>
+        <p>15, ROSE VILLA,Hill Road,Bandra,Mumbai</p>
+      </div>
+    </div>
+      <div class="box ">
+        <i class="fas fa-phone fa-3x"></i>
+        <div>
+        <h3>Phone</h3>
+        <p>22156-22780-2197</p>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-envelope fa-3x"></i>
+        <div>
+          <h3>E-mail</h3>
+          <p>igcoffin17@gmail.com</p>
+        </div>
+      </div>
+    </div>
+   </section>
+  </div>
+    
+</body>
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/50350e8f17.js" crossorigin="anonymous"></script>
+
+</html>
